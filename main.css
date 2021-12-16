@@ -11,12 +11,12 @@ body {
     font-size: 14px;
     font-family: open sans, Helvetica, Arial, sans-serif;
     line-height: 1.7;
-    /* overflow: hidden; */
 }
 
 .nav {
     display: flex;
     align-content: center;
+    /* position:sticky; */
 }
 
 .nav img {
@@ -294,4 +294,13 @@ input:focus {
 
 .socials i {
     padding: 1em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1.3em;
+    font-family: 'Roboto',
+    sans-serif;
 }
