@@ -2,14 +2,17 @@
 const search = document.querySelector(".search");
 const btn = document.querySelector("button");
 const input = document.querySelector("input");
+const icon = document.querySelector(".fa-search")
+
+// btn.style.color = '#000';
 
 btn.addEventListener("click", () => {
+  // setColor();
   search.classList.toggle("active");
   input.focus();
   input.value = ""
-  btn.style.color = '#fff';
-  
 });
+
 
 // shop button 
 

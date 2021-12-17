@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,300&family=Source+Sans+3:ital,wght@1,300&display=swap');
 
 * {
     padding: 0;
@@ -53,7 +54,7 @@ body {
 .search {
     position: relative;
     margin-top: 2em;
-    margin-left: 40em;
+    margin-left: 45em;
 }
 
 input {
@@ -65,7 +66,7 @@ input {
     color: #fff;
 }
 
-::placeholder {
+.search ::placeholder {
     color: #fff;
 }
 
@@ -88,6 +89,11 @@ input:focus {
     transition: width 0.3s ease;
     background-color: transparent;
 }
+
+.btn:focus {
+    color: #fff;
+}
+
 
 .search.active input {
     width: 250px;
@@ -154,7 +160,7 @@ input:focus {
 }
 
 .btn-text.active {
-    animation: pulsate .5s 2 ease-in-out both
+    animation: pulsate .3s 2 ease-in-out both
 }
 
 @keyframes pulsate {
@@ -170,6 +176,48 @@ input:focus {
         transform: scale(1)
     }
 }
+
+.delivery-details {
+    width: 92%;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+    background-color: #f6f3f3c0;
+    margin: auto;
+}
+
+.delivery-details input {
+    width: 250px;
+    color: rgb(105, 102, 102);
+    border: solid 2px #000;
+}
+
+.delivery-details p {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Source Sans 3',
+    sans-serif;
+}
+
+.delivery-details button {
+    background-color: #d10808;
+    border-color: #d10808;
+    padding: 0.3em 0.65em;
+    font-size: 1.65em;
+    font-weight: 500;
+    font-family: 'Source Sans 3',
+    sans-serif;
+    color: #fff;
+    box-shadow: #e24444;
+    outline: none;
+}
+/* .delivery-details::placeholder {
+    color: #000;
+} */
 
 .browse {
     width: 92%;
@@ -210,6 +258,7 @@ input:focus {
 .grid-item img {
     width: 100%;
     height: 30em;
+    border-radius: 5px;
 }
 
 .grid-item p {
@@ -273,12 +322,12 @@ input:focus {
     width: 15em;
     height: 30em;
     border: solid 2px transparent;
-    border-radius: 20px;
 }
 
 .items img {
     width: 100%;
     height: 15em;
+    border-radius: 30px;
     transition: transform .2s;
 }
 
